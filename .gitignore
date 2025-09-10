@@ -1,0 +1,4 @@
+/tools/deploy.sh
+/os/**/private-*.key
+*.swp
+.DS_Store
