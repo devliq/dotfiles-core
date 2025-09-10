@@ -20,7 +20,6 @@
 2. Make the deploy script executable:
 `sudo chmod +x /opt/dotfiles-core/tools/deploy.sh`
 
-text
 3. Add an SSH deploy key at `/root/.ssh/id_deploy` (read-only).
 4. Enable automatic deploy at boot/login:
 - **Systemd**:
