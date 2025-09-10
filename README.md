@@ -17,7 +17,6 @@
 1. Clone the repo as root or a management user:
 sudo git clone git@github.com:yourorg/dotfiles-core.git /opt/dotfiles-core
 
-text
 2. Make the deploy script executable:
 sudo chmod +x /opt/dotfiles-core/tools/deploy.sh
 
@@ -50,7 +49,7 @@ text
   Or source in `/etc/profile`.
 
 ## Repository Structure
-
+```
 dotfiles-core/
 ├── .gitignore
 ├── LICENSE
@@ -76,8 +75,7 @@ dotfiles-core/
 │ └── ci/
 └── .github/
 └── workflows/
-
-text
+```
 
 ## Contributing
 
@@ -85,4 +83,17 @@ Please open issues or submit pull requests. Follow the conventions in `docs/CONT
 
 ## License
 
-This repository is licensed under the MIT License. See `LICENSE` for de
+This repository is licensed under the MIT License. See `LICENSE` for details.
+
+## Templates and Initial Files
+License: LICENSE with MIT or Apache-2.0
+
+.gitignore:
+```
+/tools/deploy.sh
+/os/**/private-*.key
+*.swp
+.DS_Store
+```
+
+CONTRIBUTING.md: Guidelines for PRs, code style, and testing.
