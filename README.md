@@ -15,10 +15,10 @@
 ## Getting Started
 
 1. Clone the repo as root or a management user:
-sudo git clone git@github.com:yourorg/dotfiles-core.git /opt/dotfiles-core
+`sudo git clone git@github.com:yourorg/dotfiles-core.git /opt/dotfiles-core`
 
 2. Make the deploy script executable:
-sudo chmod +x /opt/dotfiles-core/tools/deploy.sh
+`sudo chmod +x /opt/dotfiles-core/tools/deploy.sh`
 
 text
 3. Add an SSH deploy key at `/root/.ssh/id_deploy` (read-only).
@@ -43,12 +43,11 @@ text
   sudo systemctl enable deploy-core.service
   ```
 - **Cron/macOS/WSL**:
-  ```
-  sudo crontab -l | { cat; echo "@reboot /opt/dotfiles-core/tools/deploy.sh"; } | sudo crontab -
-  ```
+  `sudo crontab -l | { cat; echo "@reboot /opt/dotfiles-core/tools/deploy.sh"; } | sudo crontab -`
   Or source in `/etc/profile`.
 
 ## Repository Structure
+
 ```
 dotfiles-core/
 ├── .gitignore
@@ -83,10 +82,9 @@ Please open issues or submit pull requests. Follow the conventions in `docs/CONT
 
 ## License
 
-This repository is licensed under the MIT License. See `LICENSE` for details.
+This repository is licensed under the Apache-2.0 License. See `LICENSE` for details.
 
 ## Templates and Initial Files
-License: LICENSE with MIT or Apache-2.0
 
 .gitignore:
 ```
@@ -95,5 +93,7 @@ License: LICENSE with MIT or Apache-2.0
 *.swp
 .DS_Store
 ```
+
+License: LICENSE with Apache-2.0
 
 CONTRIBUTING.md: Guidelines for PRs, code style, and testing.
